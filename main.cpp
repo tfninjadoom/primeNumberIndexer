@@ -4,8 +4,9 @@
 
 /*
 Purpose: My friend is a mathematician who works extensively with prime numbers.
-He has requested help in making a program than can compute the indices within 
-the set of primes.
+As prime numbers are not exactly predictable by any mathematical function, he 
+has requested help in making a program than can compute the indices within the 
+set of primes.
 
 This program, titled "Prime Number Indexer" finds the index of the nth prime in 
 the set of primes. 
