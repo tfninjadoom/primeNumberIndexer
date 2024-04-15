@@ -89,6 +89,7 @@ void primeCheck(int number) {
   bool isPrime { true };
   
   // checks if number is prime or composite
+  // implementation of Erastothenes' Sieve algorithm
   for (int prime : primeSet)  {
     if (number % prime == 0) { isPrime = false; }
   };
@@ -121,7 +122,7 @@ int searchPrimeSet(int prime) {
 
   // searches for prime in primeSet
   for (int i = 0; i < upperLimit; ++i) {
-    if (primeSet[i] == prime) {
+    if (prime == primeSet[i]) {
       // stores index of prime
       index = i + 1;
     }
@@ -153,7 +154,7 @@ void indexingNth() {
 
     std::cout << nthPrime << " is " << n << "th in the set of primes." << '\n';
 
-  } catch (const char* ) {
+  } catch (const char*) {
 
     std::cout << "Invalid input, not in generated prime set" << '\n';
     indexingNth();
